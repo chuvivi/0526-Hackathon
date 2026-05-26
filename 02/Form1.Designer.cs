@@ -46,6 +46,7 @@
             button9 = new Button();
             button0 = new Button();
             label2 = new Label();
+            buttonDot = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -125,7 +126,6 @@
             button1.TabIndex = 7;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += NumberButton_Click;
             // 
             // button2
             // 
@@ -226,11 +226,22 @@
             label2.TabIndex = 17;
             label2.Text = "溫度轉換機";
             // 
+            // buttonDot
+            // 
+            buttonDot.Location = new Point(338, 182);
+            buttonDot.Name = "buttonDot";
+            buttonDot.Size = new Size(44, 41);
+            buttonDot.TabIndex = 18;
+            buttonDot.Text = ".";
+            buttonDot.UseVisualStyleBackColor = true;
+            buttonDot.Click += buttonDot_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(792, 262);
+            Controls.Add(buttonDot);
             Controls.Add(label2);
             Controls.Add(button0);
             Controls.Add(button9);
@@ -275,5 +286,6 @@
         private Button button9;
         private Button button0;
         private Label label2;
+        private Button buttonDot;
     }
 }

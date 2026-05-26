@@ -36,5 +36,12 @@ namespace _02
             txtInput.Text += clickedbutton.Text;
         }
 
+        private void buttonDot_Click(object sender, EventArgs e)
+        {
+            if (!txtInput.Text.Contains("."))
+            {
+                txtInput.Text += ".";
+            }
+        }
     }
 }
