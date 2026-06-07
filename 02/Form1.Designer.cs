@@ -260,6 +260,7 @@
             Controls.Add(lblResult);
             Name = "Form1";
             Text = "Form1";
+            
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
